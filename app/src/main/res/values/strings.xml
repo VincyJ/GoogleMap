@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Google Map</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="hybrid">Hybrid</string>
+    <string name="satellite">Satellite</string>
+    <string name="normal">Normal</string>
+    <string name="terrain">Terrain</string>
+    <string name="category">Category</string>
+
+    <string-array name="markerList">
+        <item>Apple</item>
+        <item>Orange</item>
+        <item>Mango</item>/>
+    </string-array>
+
+
+</resources>

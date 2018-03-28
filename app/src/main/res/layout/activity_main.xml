@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.arputha_v.googlemap.MapWrapperLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.arputha_v.googlemap.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MapsActivity" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontal_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:scrollbarSize="2dp">
+
+            <LinearLayout
+                android:id="@+id/category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/btn_hybrid"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="@string/hybrid"
+                android:textSize="@dimen/dimens_8" />
+
+            <Button
+                android:id="@+id/btn_satellite"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="@string/satellite"
+                android:textSize="@dimen/dimens_8" />
+
+            <Button
+                android:id="@+id/btn_normal"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="@string/normal"
+                android:textSize="@dimen/dimens_8" />
+
+            <Button
+                android:id="@+id/btn_terrain"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="@string/terrain"
+                android:textSize="@dimen/dimens_8" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvLatLong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp" />
+
+    </RelativeLayout>
+</com.example.arputha_v.googlemap.MapWrapperLayout>
